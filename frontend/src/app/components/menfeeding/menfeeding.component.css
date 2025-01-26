@@ -1,0 +1,156 @@
+.men-feeding-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.explanation-section {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+}
+
+.explanation-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.explanation-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+.gallery-section {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.gallery-item {
+    margin-bottom: 40px;
+}
+
+.gallery-item h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four images per row */
+    gap: 10px;
+    justify-content: center;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three images per row */
+    }
+
+    .photo-grid img {
+        height: 180px; /* Adjust image height */
+    }
+
+    /* Reduce font size for headings and paragraph text */
+    .explanation-section h2 {
+        font-size: 1.8em; /* Reduced size */
+    }
+
+    .explanation-section p {
+        font-size: 1.1em; /* Reduced size */
+    }
+
+    .gallery-section h2 {
+        font-size: 1.6em; /* Reduced size */
+    }
+
+    .gallery-item h3 {
+        font-size: 1.3em; /* Reduced size */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two images per row */
+        gap: 8px;
+    }
+
+    .photo-grid img {
+        height: 160px; /* Adjust image height */
+    }
+
+    /* Further reduce font size for smaller screens */
+    .explanation-section h2 {
+        font-size: 1.6em; /* Reduced size */
+    }
+
+    .explanation-section p {
+        font-size: 1em; /* Reduced size */
+    }
+
+    .gallery-section h2 {
+        font-size: 1.4em; /* Reduced size */
+    }
+
+    .gallery-item h3 {
+        font-size: 1.2em; /* Reduced size */
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .photo-grid {
+        grid-template-columns: 1fr; /* One image per row */
+        gap: 6px;
+    }
+
+    .photo-grid img {
+        height: 120px; /* Adjust image height */
+    }
+
+    /* Reduce font size further */
+    .explanation-section h2 {
+        font-size: 1.4em;
+        margin-top: 15px;
+    }
+
+    .explanation-section p {
+        font-size: 0.9em;
+    }
+
+    .gallery-section h2 {
+        font-size: 1.2em;
+    }
+
+    .gallery-item h3 {
+        font-size: 1.1em;
+    }
+}

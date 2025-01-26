@@ -1,0 +1,228 @@
+/* About Page Styles */
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.section {
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1; /* Ensure sections are above other elements */
+}
+
+.mission-section,
+.vision-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.mission-image img,
+.vision-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.mission-content,
+.vision-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.mission-content h2,
+.vision-content h2 {
+    font-size: 2rem;
+    color: #03045E;
+    margin-bottom: 15px;
+}
+
+.mission-content p,
+.vision-content p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Who We Are Section */
+.who-we-are-section {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.who-we-are-section h2 {
+    font-size: 2rem;
+    color: #03045E;
+    margin-bottom: 15px;
+}
+
+.who-we-are-section p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Leaders Section */
+.leaders-section {
+    text-align: center;
+}
+
+.leaders-section h2 {
+    font-size: 2rem;
+    color: #03045E;
+    margin-bottom: 20px;
+}
+
+.leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.leader {
+    text-align: center;
+}
+
+.leader img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.leader h3 {
+    font-size: 1.2rem;
+    color: #03045E;
+    margin-bottom: 5px;
+}
+
+.leader p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px; /* Make room for the fixed navbar */
+}
+
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .mission-section,
+    .vision-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mission-content h2,
+    .vision-content h2,
+    .who-we-are-section h2,
+    .leaders-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .mission-content p,
+    .vision-content p,
+    .who-we-are-section p {
+        font-size: 1.1rem;
+    }
+
+    .leaders-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .leader img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+    .about-page {
+        margin-top: 150px;
+        padding-left:0px;
+    }
+    .mission-section,
+    .vision-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .mission-content h2,
+    .vision-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .leaders-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .leader img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .leader h3 {
+        font-size: 1.1rem;
+    }
+
+    .leader p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 480px) {
+    .mission-section,
+    .vision-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .leaders-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .leader img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .mission-content h2,
+    .vision-content h2,
+    .leaders-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .mission-content p,
+    .vision-content p,
+    .who-we-are-section p,
+    .leader p {
+        font-size: 0.85rem;
+    }
+}

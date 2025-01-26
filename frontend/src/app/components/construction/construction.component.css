@@ -1,0 +1,156 @@
+.church-construction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.explanation-section {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.explanation-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.explanation-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.gallery-section {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+}
+
+.gallery-item h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .photo-grid img {
+        height: 140px;
+    }
+
+    /* Reduce font size for headings and paragraph text */
+    .explanation-section h1 {
+        font-size: 1.8em; /* Reduced size */
+    }
+
+    .explanation-section p {
+        font-size: 1.1em; /* Reduced size */
+    }
+
+    .gallery-section h2 {
+        font-size: 1.4em; /* Reduced size */
+    }
+
+    .gallery-item h3 {
+        font-size: 1.3em; /* Reduced size */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .photo-grid img {
+        height: 120px;
+    }
+
+    /* Further reduce font size for smaller screens */
+    .explanation-section h1 {
+        font-size: 1.6em;
+    }
+
+    .explanation-section p {
+        font-size: 1em;
+    }
+
+    .gallery-section h2 {
+        font-size: 1.2em;
+    }
+
+    .gallery-item h3 {
+        font-size: 1.1em;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+      
+    }
+
+    .photo-grid img {
+        height: 100px;
+    }
+
+    /* Reduce font size further */
+    .explanation-section h1 {
+        font-size: 1.4em;
+        margin-top: 60px;
+    }
+
+    .explanation-section p {
+        font-size: 0.9em;
+    }
+
+    .gallery-section h2 {
+        font-size: 1.1em;
+    }
+
+    .gallery-item h3 {
+        font-size: 1em;
+    }
+}

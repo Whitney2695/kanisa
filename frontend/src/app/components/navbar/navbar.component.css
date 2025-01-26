@@ -1,0 +1,130 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #03045E;
+    color: white;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #03045E;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.church-name {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #03045E;
+    gap: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-bottom a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-bottom a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-bottom a.active {
+    border-bottom: 2px solid white;
+}
+
+/* Add spacing below the fixed navbar to prevent overlap */
+body {
+    margin-top: 130px; /* Adjust this value based on the actual height of your navbar */
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .navbar-top {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .church-name {
+        margin-top: 5px;
+        font-size: 1.25rem;
+    }
+
+    .navbar-bottom {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar-bottom a {
+        padding: 5px 10px;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 50px;
+    }
+
+    .church-name {
+        font-size: 1.2rem;
+    }
+
+    .navbar-bottom {
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .navbar-bottom a {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+}
+
+/* Extra small screens (below 480px) */
+@media (max-width: 480px) {
+    .church-name {
+        font-size: 1rem;
+    }
+
+    .navbar-bottom {
+        gap: 5px;
+    }
+
+    .navbar-bottom a {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,61 @@
+.childrens-home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.explanation-section {
+    text-align: center;
+    margin-bottom: 20px; /* Reduced space between explanation and gallery */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Allows a heading above the paragraph */
+    height: auto; /* Allows content to take its natural height */
+}
+
+.explanation-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-top: 10px;
+}
+
+.gallery-section {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    margin-bottom: 30px; /* Reduced space between gallery items */
+}
+
+.gallery-item h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four images per row */
+    gap: 5px; /* Reduced gap between images */
+    justify-content: center;
+}
+
+.photo-grid img {
+    width: 250px; /* Increased image width */
+    height: 180px; /* Increased image height */
+    object-fit: cover; /* Ensures images fit within dimensions without distortion */
+    border-radius: 8px; /* Slightly smaller border radius for sharper corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow for subtle effect */
+}

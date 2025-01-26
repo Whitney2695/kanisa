@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="homepage">
+    <!-- Top section with church image -->
+    <div class="top-section">
+        <img [src]="images[currentImageIndex]" alt="Church" class="church-image" />
+    </div>
+    
+    <!-- Middle section with order of services -->
+    <div class="services-section">
+        <h2>Order of Services</h2> 
+        <ul class="services-list">
+            <li><strong>Sunday:</strong> Morning Worship - 9:00 AM</li>
+            <li><strong>Monday:</strong> Bible Study - 6:00 PM</li>
+            <li><strong>Tuesday:</strong> Prayer Meeting - 7:00 PM</li>
+            <li><strong>Wednesday:</strong> Youth Fellowship - 5:00 PM</li>
+            <li><strong>Thursday:</strong> Community Outreach - 4:00 PM</li>
+            <li><strong>Friday:</strong> Evening Service - 7:00 PM</li>
+            <li><strong>Saturday:</strong> Choir Practice - 3:00 PM</li>
+        </ul>
+    </div>
+ 
+    <!-- Section with church images -->
+    <div class="gallery-section">
+        <h2>Church Gallery</h2>
+        <div class="gallery-grid">
+            <img src="assets/children1.jpg" alt="Church Image 2" />
+            <img src="assets/men2.jpg" alt="Church Image 3" />
+            <img src="assets/bible.jpg" alt="Church Image 4" />
+            <img src="assets/choir.jpg" alt="Church Image 5" />
+            <img src="assets/youth3.JPG" alt="Church Image 6" />
+            <img src="assets/tzmision4.jpg" alt="Church Image 7" />
+            <img src="assets/mission.jpg" alt="Church Image 8" />
+            <img src="assets/people.jpg" alt="Church Image 9" />
+        </div>
+    </div>
+
+    <!--Map Section -->
+    <div class="map-section">
+        <h2>Find Us Here</h2>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.361326827931!2d36.69183047350049!3d-1.2797794356159706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1f63bc13a4dd%3A0x743a37e5b5c79946!2sglory%20tabernacle%20ministry!5e1!3m2!1sen!2ske!4v1737893162648!5m2!1sen!2ske" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+    
+    </div>
+    
+    
+</div>
+<app-footer></app-footer>
