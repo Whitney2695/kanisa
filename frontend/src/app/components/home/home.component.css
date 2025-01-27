@@ -119,6 +119,7 @@ html, body {
     }
     .top-section {
         height: auto;
+        margin-top: 40px; 
     }
 
     .church-image {
@@ -126,7 +127,7 @@ html, body {
         height: auto;
         object-fit: contain;
     }
-
+ 
     .gallery-grid {
         grid-template-columns: 1fr;
     }
