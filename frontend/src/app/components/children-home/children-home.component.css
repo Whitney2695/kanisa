@@ -10,18 +10,18 @@
 
 .explanation-section {
     text-align: center;
-    margin-bottom: 20px; /* Reduced space between explanation and gallery */
+    margin-bottom: 20px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Allows a heading above the paragraph */
-    height: auto; /* Allows content to take its natural height */
+    flex-direction: column; 
+    height: auto; 
 }
 
 .explanation-section p {
     font-size: 1.2em;
     max-width: 800px;
-    line-height: 1.8; /* Increased line height for better readability */
+    line-height: 1.8;
     margin-top: 10px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .gallery-item {
-    margin-bottom: 30px; /* Reduced space between gallery items */
+    margin-bottom: 30px; 
 }
 
 .gallery-item h3 {
@@ -47,15 +47,58 @@
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four images per row */
-    gap: 5px; /* Reduced gap between images */
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 5px; 
     justify-content: center;
 }
 
 .photo-grid img {
-    width: 250px; /* Increased image width */
-    height: 180px; /* Increased image height */
-    object-fit: cover; /* Ensures images fit within dimensions without distortion */
-    border-radius: 8px; /* Slightly smaller border radius for sharper corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow for subtle effect */
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .explanation-section p {
+        font-size: 1em; /* Slightly smaller text for medium screens */
+    }
+
+    .gallery-item h3 {
+        font-size: 1.2em; /* Smaller heading */
+    }
+
+    .explanation-section h1 {
+        margin-top: 20px; /* Add margin top to heading on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .explanation-section p {
+        font-size: 0.9em; /* Smaller text for small screens */
+    }
+
+    .gallery-item h3 {
+        font-size: 1.1em; /* Even smaller heading */
+    }
+
+    .explanation-section h1 {
+        margin-top: 30px; /* Add more top margin for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .explanation-section p {
+        font-size: 0.8em; /* Very small text on extra small screens */
+    }
+
+    .gallery-item h3 {
+        font-size: 1em; /* Very small heading */
+    }
+
+    .explanation-section h1 {
+        margin-top: 40px; /* Add even more top margin for very small screens */
+    }
 }
